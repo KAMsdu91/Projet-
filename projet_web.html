@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AllezCine</title>   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <style> 
+        .header{
+        width: 100%;
+        height: 60vh;
+        background-image: url("intouchables-2011-comedie.jpg");
+        background-size: cover;
+        background-position: center;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 20px;
+        }
+        .color_red{ 
+
+        width: 100%;
+        height: 35px; /* Définissez la hauteur de la barre rouge */
+        background-color: brown;
+        position: absolute;
+        margin-top: 408px;
+        }
+
+        .position_text_header{ 
+            margin-top: 350px;
+            position: fixed;
+        }
+        .position_Home{
+            margin-left: -130%;
+            margin-top: -380px;
+        }
+        .positon_genre{
+            margin-left: 100px;
+            margin-top: -380px;
+        }
+        .position_contact{
+            margin-left: 100px;
+            margin-top: -380px;
+        }
+        .position_AllezCine{
+            margin-left: -95px;
+            
+            margin-top: -700px;
+        }
+        .position_latest_online_movie{
+            margin-top: -300px;
+        }
+        .position_moteur_recherche{
+            margin-left: 1150px;
+            margin-top: -330px;
+        }
+    </style>
+    <header  class=" header text-white py-3">
+        <div class="position_text_header  container d-flex justify-content-between align-items-center">
+            <di class="position_AllezCine">
+                <h1 class="text-danger">ALLEZ<span class="text-white">CINE!</span></h1>
+            </di>
+            <nav>
+                <ul class="nav">
+                    <li class="position_Home nav-item"><a href="#" class="nav-link"><button class="btn btn-outline-light" style="border-color: brown; background-color: brown; color: aliceblue; font-size: small;">HOME</button></a></li>
+                    <li class="nav-item dropdown">
+                        <a class="positon_genre nav-link dropdown-toggle text-white" href="#" id="genreDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"><button class="btn btn-outline-light">Genre</button></a>
+                        <ul class="dropdown-menu" aria-labelledby="genreDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Comedy</a></li>
+                            <li><a class="dropdown-item" href="#">Western</a></li>
+                            <li><a class="dropdown-item" href="#">Fiction</a></li>
+                        </ul>
+                    </li>
+                    <li class="position_contact nav-item"><a href="#" class="nav-link text-white">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <di class="color_red">
+            <button class="btn btn-outline-light" style="border-radius: 0%; border-color: black; background-color: black; font-size: x-small; margin-top: 3.5px; margin-left: -850px;"><span style="color: aliceblue;">LOGIN</span></button>
+            <button class="btn btn-outline-light" style="border-radius: 0%; border-color: black; background-color: black; font-size: x-small; margin-top: 3.5px;"><span style="color: aliceblue;">REGISTER</span></button>
+            <P style=" margin-top: -25.5px; margin-left: -1300px; "> (+000 ) 009 455 4088</P>
+        </di>
+        <div class="position_moteur_recherche">
+            <input type="text" class="form-control d-inline-block w-auto" placeholder="Recherche" ><button style="margin-top: -5px; margin-left: -50px; border: 0cap ; border-radius: 30%;" class="btn btn-outline-light">🔍</button>
+        </div>
+    </header>
+    <section class="banner text-center text-white py-5" style="background: url('banner.jpg') no-repeat center/cover;">
+        <h2 class="position_latest_online_movie fw-bold">LATEST <span class="text-danger">ONLINE MOVIES</span></h2>
+        <p style="font-size: small;">IN SPACE NO ONE CAN HEAR YOU SCREAM</p>
+        <button class="btn btn-danger mt-3">WATCH TRAILER</button>
+    </section>
+
+    <section class="container my-5">
+        <h3 class="text-danger">FEATURED MOVIES</h3>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="C:/Users/kamde/OneDrive/Bureau/E-IT/Html/Project_web.html/batmanmovie-2017-comedie.jpg" class="card-img-top" alt="Image de la carte">
+                    <div class="card-body">
+                        <h5 class="card-title">X-Men</h5>
+                        <p class="card-text">2016 - Genre</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="C:/Users/kamde/OneDrive/Bureau/E-IT/Html/Project_web.html/zoolander-2001-comedie.jpg" class="card-img-top" alt="Image de la carte">
+                    <div class="card-body">
+                        <h5 class="card-title">Citizen Soldier</h5>
+                        <p class="card-text">2016 - Genre</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white text-center py-4">
+        <p>© 2025 AllezCine. Tous droits réservés.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
